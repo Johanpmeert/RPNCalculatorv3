@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane onKeyPressed="#verwerktoets" prefHeight="392.0" prefWidth="259.0" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="sample.Controller">
+    <children>
+        <Button layoutX="70.0" layoutY="287.0" mnemonicParsing="false" onAction="#pushb1" prefHeight="25.0" prefWidth="25.0" text="1" />
+        <Button layoutX="103.0" layoutY="287.0" mnemonicParsing="false" onAction="#pushb2" prefHeight="25.0" prefWidth="25.0" text="2" />
+        <Button layoutX="70.0" layoutY="322.0" mnemonicParsing="false" onAction="#pushb0" prefHeight="25.0" prefWidth="25.0" text="0" />
+        <Button layoutX="103.0" layoutY="322.0" mnemonicParsing="false" onAction="#pushstop" prefHeight="25.0" prefWidth="25.0" text="." />
+        <Button layoutX="137.0" layoutY="287.0" mnemonicParsing="false" onAction="#pushb3" prefHeight="25.0" prefWidth="25.0" text="3" />
+        <Button layoutX="70.0" layoutY="252.0" mnemonicParsing="false" onAction="#pushb4" prefHeight="25.0" prefWidth="25.0" text="4" />
+        <Button layoutX="103.0" layoutY="252.0" mnemonicParsing="false" onAction="#pushb5" prefHeight="25.0" prefWidth="25.0" text="5" />
+        <Button layoutX="137.0" layoutY="252.0" mnemonicParsing="false" onAction="#pushb6" prefHeight="25.0" prefWidth="25.0" text="6" />
+        <Button layoutX="70.0" layoutY="217.0" mnemonicParsing="false" onAction="#pushb7" prefHeight="25.0" prefWidth="25.0" text="7" />
+        <Button layoutX="103.0" layoutY="217.0" mnemonicParsing="false" onAction="#pushb8" prefHeight="25.0" prefWidth="25.0" text="8" />
+        <Button layoutX="137.0" layoutY="217.0" mnemonicParsing="false" onAction="#pushb9" prefHeight="25.0" prefWidth="25.0" text="9" />
+        <Label fx:id="stackl7" layoutX="40.0" layoutY="176.0" prefHeight="25.0" prefWidth="137.0" text="&lt;empty&gt;" />
+        <Label layoutX="14.0" layoutY="176.0" prefHeight="25.0" text="L7:" />
+        <Label fx:id="stackl6" layoutX="40.0" layoutY="154.0" prefHeight="25.0" prefWidth="137.0" text="&lt;empty&gt;" />
+        <Label layoutX="14.0" layoutY="154.0" prefHeight="25.0" text="L6:" />
+        <Label layoutX="14.0" layoutY="132.0" prefHeight="25.0" text="L5:" />
+        <Label layoutX="13.0" layoutY="110.0" prefHeight="25.0" text="L4:" />
+        <Label layoutX="13.0" layoutY="88.0" prefHeight="25.0" text="L3:" />
+        <Label layoutX="13.0" layoutY="66.0" prefHeight="25.0" text="L2:" />
+        <Label layoutX="13.0" layoutY="42.0" prefHeight="25.0" text="L1:" />
+        <Label layoutX="14.0" layoutY="20.0" prefHeight="25.0" text="-&gt;" />
+        <Label fx:id="stackl5" layoutX="40.0" layoutY="132.0" prefHeight="25.0" prefWidth="137.0" text="&lt;empty&gt;" />
+        <Label fx:id="stackl4" layoutX="40.0" layoutY="110.0" prefHeight="25.0" prefWidth="137.0" text="&lt;empty&gt;" />
+        <Label fx:id="stackl3" layoutX="40.0" layoutY="88.0" prefHeight="25.0" prefWidth="137.0" text="&lt;empty&gt;" />
+        <Label fx:id="stackl2" layoutX="40.0" layoutY="66.0" prefHeight="25.0" prefWidth="137.0" text="&lt;empty&gt;" />
+        <Label fx:id="stackl1" layoutX="40.0" layoutY="42.0" prefHeight="25.0" prefWidth="137.0" text="&lt;empty&gt;" />
+        <Label fx:id="stackl0" layoutX="47.0" layoutY="20.0" prefHeight="25.0" prefWidth="137.0" />
+        <Button defaultButton="true" layoutX="18.0" layoutY="287.0" mnemonicParsing="false" onAction="#pushenter" prefHeight="25.0" prefWidth="44.0" text="Enter" />
+        <Label layoutX="13.0" layoutY="365.0" text="Stack depth :" />
+        <Label fx:id="stackdepth" layoutX="91.0" layoutY="365.0" prefHeight="17.0" prefWidth="35.0" text="0" />
+        <Button layoutX="171.0" layoutY="322.0" mnemonicParsing="false" onAction="#pushplus" prefHeight="25.0" prefWidth="25.0" text="+" />
+        <Button layoutX="171.0" layoutY="287.0" mnemonicParsing="false" onAction="#pushminus" prefHeight="25.0" prefWidth="25.0" text="-" />
+        <Button layoutX="171.0" layoutY="252.0" mnemonicParsing="false" onAction="#pushmultiply" prefHeight="25.0" prefWidth="25.0" text="*" />
+        <Button layoutX="171.0" layoutY="217.0" mnemonicParsing="false" onAction="#pushdivision" prefHeight="25.0" prefWidth="25.0" text="/" />
+        <Button layoutX="18.0" layoutY="322.0" mnemonicParsing="false" onAction="#pushbs" prefHeight="25.0" prefWidth="44.0" text="BS" />
+        <Button layoutX="206.0" layoutY="287.0" mnemonicParsing="false" onAction="#pushdup" prefHeight="25.0" prefWidth="41.0" text="Dup" />
+        <Button layoutX="206.0" layoutY="322.0" mnemonicParsing="false" onAction="#pushrot" prefHeight="25.0" prefWidth="41.0" text="Rot" />
+        <Button layoutX="206.0" layoutY="252.0" mnemonicParsing="false" onAction="#pushover" prefHeight="25.0" prefWidth="41.0" text="Over" />
+        <Button layoutX="18.0" layoutY="217.0" mnemonicParsing="false" onAction="#pushce" prefHeight="25.0" prefWidth="44.0" text="CE" />
+        <Button layoutX="18.0" layoutY="252.0" mnemonicParsing="false" onAction="#pushclr" prefHeight="25.0" prefWidth="44.0" text="CLR" />
+        <Button layoutX="206.0" layoutY="147.0" mnemonicParsing="false" onAction="#pushsquare" prefHeight="25.0" prefWidth="41.0" text="x²" />
+        <Button layoutX="206.0" layoutY="182.0" mnemonicParsing="false" onAction="#pushsquareroot" prefHeight="25.0" prefWidth="41.0" text="Sqrt" />
+        <Button layoutX="137.0" layoutY="322.0" mnemonicParsing="false" onAction="#pusheex" prefHeight="25.0" prefWidth="25.0" text="E" />
+        <Button layoutX="206.0" layoutY="217.0" mnemonicParsing="false" onAction="#pushplusminus" prefWidth="41.0" text="+/-" />
+        <Button layoutX="206.0" layoutY="112.0" mnemonicParsing="false" onAction="#push1x" prefHeight="25.0" prefWidth="41.0" text="1/x" />
+        <Label layoutX="136.0" layoutY="365.0" text="Key :" />
+        <Label fx:id="toetsdruk" layoutX="170.0" layoutY="365.0" prefHeight="17.0" prefWidth="50.0" />
+    </children>
+</AnchorPane>
